@@ -47,25 +47,21 @@ BrainBytes is an AI-powered tutoring platform designed to provide accessible aca
 # Milestone 1 Task Distribution
 
 Week 1: Container Basics
-
 **Laiza Veronica Llanto**: Set up project repository and basic documentation
 **Danilo Giltendez, Christian John Batuigas**: Research and document containerization approach
 **All Team Members**: Complete Docker installation and verification
 
 Week 2: Platform Development
-
 **Christian John Batuigas, Kenneth Ian Lu**: Implement frontend container (Next.js)
 **John Paul Arquita, Danilo Giltendez**: Implement backend container (Node.js)
 **Laiza Veronica Llanto**: Configure MongoDB Atlas and connection
 
 Week 3: Platform Development (continued)
-
 **Kenneth Ian Lu, Christian John Batuigas**: Implement chat interface frontend
 **John Paul Arquita**: Implement backend API endpoints
 **Laiza Veronica Llanto**: Set up container networking
 
 Week 4: Integration and Testing
-
 **John Paul Arquita, Laiza Veronica Llanto**: Integrate AI model
 **Kenneth Ian Lu, Christian John Batuigas**: Implement message history storage
 **Laiza Veronica Llanto, Danilo Giltendez**: Create project documentation
