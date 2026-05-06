@@ -30,7 +30,7 @@ BrainBytes is an AI-powered tutoring platform designed to provide accessible aca
 
 | Team Member             | Docker Installed  | Git Installed | VS Code Installed | Can Run Hello World Container |
 |-------------------------|-------------------|---------------|-------------------|-------------------------------|
-| Danilo Giltendez        | x                 | ✓             | ✓                 | x                             |
+| Danilo Giltendez        | ✓                 | ✓             | ✓                 | x                             |
 | John Paul Arquita       | x                 | ✓             | ✓                 | x                             |
 | Kenneth Ian Lu          | x                 | x             | ✓                 | x                             |
 | Christian John Batuigas | x                 | x             | ✓                 | x                             |
@@ -56,7 +56,7 @@ BrainBytes is an AI-powered tutoring platform designed to provide accessible aca
 **John Paul Arquita, Danilo Giltendez**: Implement backend container (Node.js)  
 **Laiza Veronica Llanto**: Configure MongoDB Atlas and connection  
 
-## Week 3: Platform Development (continued)
+## Week 3: Platform Development
 **Kenneth Ian Lu, Christian John Batuigas**: Implement chat interface frontend  
 **John Paul Arquita**: Implement backend API endpoints  
 **Laiza Veronica Llanto**: Set up container networking  
