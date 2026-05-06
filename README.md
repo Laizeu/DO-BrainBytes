@@ -26,7 +26,7 @@ BrainBytes is an AI-powered tutoring platform designed to provide accessible aca
 - Cloud Provider: Oracle Cloud Free Tier
 - Monitoring: Prometheus & Grafana
 
-# Development Environment Setup Verification
+## Development Environment Setup Verification
 
 | Team Member             | Docker Installed  | Git Installed | VS Code Installed | Can Run Hello World Container |
 |-------------------------|-------------------|---------------|-------------------|-------------------------------|
@@ -38,7 +38,7 @@ BrainBytes is an AI-powered tutoring platform designed to provide accessible aca
 
 ## Docker Version Information
 
-# Sample Architecture
+## Project Architecture Draft
 - Container names
 - Port mappings
 - Data flows
