@@ -30,11 +30,11 @@ BrainBytes is an AI-powered tutoring platform designed to provide accessible aca
 
 | Team Member             | Docker Installed  | Git Installed | VS Code Installed | Can Run Hello World Container |
 |-------------------------|-------------------|---------------|-------------------|-------------------------------|
-| Danilo Giltendez        | ✓                 | ✓             | ✓                 | x                             |
-| John Paul Arquita       | x                 | ✓             | ✓                 | x                             |
-| Kenneth Ian Lu          | x                 | x             | ✓                 | x                             |
+| Danilo Giltendez        | ✓                 | ✓             | ✓                 | ✓                             |
+| John Paul Arquita       | ✓                 | ✓             | ✓                 | ✓                             |
+| Kenneth Ian Lu          | ✓                 | x             | ✓                 | ✓                             |
 | Christian John Batuigas | x                 | x             | ✓                 | x                             |
-| Laiza Veronica Llanto   | x                 | ✓             | ✓                 | x                             |
+| Laiza Veronica Llanto   | ✓                 | ✓             | ✓                 | ✓                             |
 
 ## Docker Version Information
 
