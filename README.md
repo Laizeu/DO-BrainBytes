@@ -42,7 +42,7 @@ Docker version 29.4.2, build 055a478
 ## Project Architecture Draft
 
                    BrainBytes Application Architecture  
-┌─────────────────────────────────────────────────────────────┐  
+┌────────────────────────────────────────────────────┐  
 
                         ┌──────────────────────┐
                         │     User Browser     │
@@ -87,7 +87,7 @@ Docker version 29.4.2, build 055a478
      └────────────────────────┘   └────────────────────────┘
 
 
-──────────────────────────────────────────────────────────────  
+───────────────────────────────────────────────────────  
 Container Communication Flow  
 
 1. User sends request from Browser
@@ -100,7 +100,7 @@ Container Communication Flow
 6. Response returns to Frontend
 7. Frontend displays result to User
 
-──────────────────────────────────────────────────────────────  
+───────────────────────────────────────────────────────  
 Docker & DevOps Components  
 
 • Docker → Containerized environments  
@@ -109,7 +109,7 @@ Docker & DevOps Components
 • Oracle Cloud → Deployment hosting  
 • Prometheus + Grafana → Monitoring & dashboards  
 
-└─────────────────────────────────────────────────────────────┘  
+└──────────────────────────────────────────────────────┘  
 
 # Milestone 1 Task Distribution
 
