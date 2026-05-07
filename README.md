@@ -103,11 +103,11 @@ Container Communication Flow
 ──────────────────────────────────────────────────────────────  
 Docker & DevOps Components  
 
-• Docker → Containerized environments
-• Docker Compose → Multi-container orchestration
-• GitHub Actions → CI/CD automation
-• Oracle Cloud → Deployment hosting
-• Prometheus + Grafana → Monitoring & dashboards
+• Docker → Containerized environments  
+• Docker Compose → Multi-container orchestration  
+• GitHub Actions → CI/CD automation  
+• Oracle Cloud → Deployment hosting  
+• Prometheus + Grafana → Monitoring & dashboards  
 
 └─────────────────────────────────────────────────────────────┘  
 
