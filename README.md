@@ -7,7 +7,7 @@ BrainBytes is an AI-powered tutoring platform designed to provide accessible aca
 - Danilo Giltendez - Team Lead - lr.dgiltendez@mmdc.mcl.edu.ph
 - John Paul Arquita - Backend Developer - lr.jparquita@mmdc.mcl.edu.ph
 - Kenneth Ian Lu - Frontend Developer - lr.kilu@mmdc.mcl.edu.ph
-- Christian John Batuigas - Frontend Developer - [email@mmdc.mcl.edu.ph]
+- Christian John Batuigas - Frontend Developer - lr.cjbatuigas@mmdc.mcl.edu.ph
 - Laiza Veronica Llanto - DevOps Engineer - lr.lvllanto@mmdc.mcl.edu.ph
 
 
@@ -37,12 +37,79 @@ BrainBytes is an AI-powered tutoring platform designed to provide accessible aca
 | Laiza Veronica Llanto   | ✓                 | ✓             | ✓                 | ✓                             |
 
 ## Docker Version Information
+Docker version 29.4.2, build 055a478
 
 ## Project Architecture Draft
-- Container names
-- Port mappings
-- Data flows
-- Any additional services (like the AI model integration)
+
+                   BrainBytes Application Architecture
+┌─────────────────────────────────────────────────────────────────────┐
+
+                        ┌──────────────────────┐
+                        │     User Browser     │
+                        │  Client / Web User   │
+                        └──────────┬───────────┘
+                                   │
+                          HTTP Requests (HTTPS)
+                                   │
+                                   ▼
+        ┌─────────────────────────────────────────────────┐
+        │            Frontend Container                   │
+        │-------------------------------------------------│
+        │ Container Name: brainbytes-frontend             │
+        │ Technology: Next.js                             │
+        │ Port Mapping: 3000:3000                         │
+        │ Purpose: User Interface / Chat Interface        │
+        └──────────────────┬──────────────────────────────┘
+                           │
+                           │ REST API Calls / JSON
+                           ▼
+        ┌─────────────────────────────────────────────────┐
+        │             Backend Container                   │
+        │-------------------------------------------------│
+        │ Container Name: brainbytes-backend              │
+        │ Technology: Node.js + Express                   │
+        │ Port Mapping: 5000:5000                         │
+        │ Purpose: API, Authentication, AI Processing     │
+        └───────────────┬─────────────────┬───────────────┘
+                        │                 │
+                        │                 │
+            Database Queries      AI API Requests
+              MongoDB URI         AI Model Integration
+                        │                 │
+                        ▼                 ▼
+
+     ┌────────────────────────┐   ┌────────────────────────┐
+     │     MongoDB Atlas      │   │     AI Service/API     │
+     │------------------------│   │------------------------│
+     │ Cloud Database Storage │   │ OpenAI / AI Model      │
+     │ Stores Users, Chats,   │   │ Generates AI Responses │
+     │ Message History        │   │ for BrainBytes Chat    │
+     └────────────────────────┘   └────────────────────────┘
+
+
+──────────────────────────────────────────────────────────────────────
+Container Communication Flow
+
+1. User sends request from Browser
+2. Next.js Frontend receives request
+3. Frontend calls Backend API
+4. Backend processes request
+5. Backend communicates with:
+      • MongoDB Atlas for data storage
+      • AI Service for AI-generated responses
+6. Response returns to Frontend
+7. Frontend displays result to User
+
+──────────────────────────────────────────────────────────────────────
+Docker & DevOps Components
+
+• Docker → Containerized environments
+• Docker Compose → Multi-container orchestration
+• GitHub Actions → CI/CD automation
+• Oracle Cloud → Deployment hosting
+• Prometheus + Grafana → Monitoring & dashboards
+
+└─────────────────────────────────────────────────────────────────────┘
 
 # Milestone 1 Task Distribution
 
